@@ -14,15 +14,7 @@ import { ChatLayout } from './components/chat-layout'
 
 function App() {
   return<>
-  <ChatContactList/>
-  <ChatContact/>
-  <ChatControls/>
-  <ChatDiscussionContacts/>
-  <ChatDiscussionList/>
-  <ChatMessageList/>
-  <ChatMessage/>
-  <ChatStartDiscussionModal/>
-  <ChatStartDiscussionButton/>
+
   <ChatLayout 
       controls={<ChatControls/>} 
       aside={<ChatDiscussionList/>} 
