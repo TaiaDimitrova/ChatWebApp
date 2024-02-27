@@ -52,3 +52,24 @@ body {
   padding: var(--space-md);
   flex-grow: 1;
 }
+
+/* CHAT CONTROLS START */
+
+.chat-controls {
+ display: flex;
+ gap: var(--space-md);
+
+}
+
+.chat-controls-button {
+  background-color: transparent;
+  border: 2px solid blue;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.chat-controls-button.is-active {
+  background-color: blue;
+  color: white;
+}
+/* CHAT CONTROLS STOP */

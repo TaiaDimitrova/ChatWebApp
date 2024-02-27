@@ -15,16 +15,11 @@ function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <>
-      <button
-        onClick={() => {
-          setIsModalVisible(true);
-        }}
-      >
-        Show Modal
-      </button>
       {isModalVisible && <ChatStartDiscussionModal />}
       <ChatLayout
-        controls={<ChatControls />}
+        controls={
+          <ChatControls isModalVisible={isModalVisible} setIsModalVisible={setIsModalVisible} />
+        }
         aside={<ChatDiscussionList />}
         main={<ChatMessageList />}
       />
